@@ -82,7 +82,6 @@ class Config:
         "transformers>=4.44.0",
         "accelerate>=0.33.0",
         "datasets>=2.20.0",
-        "libtpu-nightly",
         "sentencepiece",
         "protobuf",
         "einops",

@@ -166,7 +166,7 @@ def setup_tpu_environment() -> None:
     logger.info("  ✓ PJRT_DEVICE=%s", os.environ.get("PJRT_DEVICE"))
     logger.info("  ✓ XLA_USE_BF16=%s", os.environ.get("XLA_USE_BF16"))
 
-    # Attempt to detect TPUs
+    # Attempt to detect TPUs — Kaglee y GCP TPU VMs ya traen libtpu preinstalado
     try:
         import subprocess
         result = subprocess.run(
